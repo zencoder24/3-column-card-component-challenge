@@ -1,0 +1,184 @@
+body{
+    background: hsl(0, 0%, 95%);
+}
+
+.card-container{
+    display: flex;
+    margin: 20% auto;
+    flex-direction: column;
+    width: 90%;
+    border-radius: 10px;
+
+}
+
+/*Section Styles */
+.section-content{
+    margin: 40px;
+}
+
+.icon{
+    height: 3rem;
+}
+
+.vehicle-header{
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-size: 3rem;
+}
+
+.vehicle-description{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+    font-size: 1.28rem;
+    margin-bottom: 33px;
+}
+
+/* Button Styles */
+.learn-more_btn{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    border-radius: 160px;
+    padding: 13px 30px;
+    background: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+
+}
+
+#sedans-info{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+}
+
+#sedan_learn-more{
+    color: hsl(31, 77%, 52%);
+}
+
+#suvs-info{
+    background-color: hsl(184, 100%, 22%);
+
+}
+
+#suv_learn-more{
+    color: hsl(184, 100%, 22%) ;
+}
+
+#luxury-info{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 35px 35px;
+}
+
+#luxury_learn-more{
+    color: hsl(179, 100%, 13%) ;
+}
+
+#luxury_learn-more:hover, #suv_learn-more:hover, #sedan_learn-more:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+
+/*Media Queries */
+@media all and (min-width: 768px) {
+    .card-container {
+        flex-direction: row;
+    }
+    #sedans-info{
+        border-radius: 10px 0 0 10px;
+    }
+    .content{
+        margin: 40px 35px;
+    }
+    .icon{
+        height: 1.8rem;
+    }
+
+    h1{
+        font-size: 1.8rem;
+    }
+
+    .vehicle-description{
+        line-height: 1.7;
+        font-size: .71rem;
+        margin-bottom: 33px;
+    }
+
+    .learn-more_btn{
+        font-size: .71rem;
+        padding: 10px 27px;
+    }
+
+    #luxury-info{
+        border-radius: 0 10px 10px 0;
+    }
+
+
+}
+
+@media all and (min-width: 1024px) {
+    .content{
+        margin: 52px 50px;
+    }
+
+    .icon{
+        height: 1.9rem;
+    }
+
+    h1{
+        font-size: 1.9rem;
+    }
+
+    .vehicle-description{
+        font-size: .92rem;
+    }
+
+}
+
+@media all and (min-width: 1360px) {
+    .card-container{
+        width: 68%;
+        margin: 13% auto;
+    }
+
+    .content{
+        margin: 44px 65px 45px;
+    }
+}
+
+@media all and (min-width: 1440px) {
+    .card-container{
+        width: 53%;
+        margin: 13% auto;
+    }
+
+    .content{
+        margin: 44px 49px 45px;
+    }
+
+    .icon{
+        height: 2.5rem;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    .vehicle-description{
+        font-size: .92rem;
+    }
+
+
+}
+
+
+#attribution{
+    text-align: center;
+    margin-top: -100px;
+}
+
+
+
+
+
